@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		77699192247825BE00C3FEE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77699191247825BE00C3FEE7 /* AppDelegate.swift */; };
 		77699194247825BE00C3FEE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77699193247825BE00C3FEE7 /* SceneDelegate.swift */; };
-		77699196247825BE00C3FEE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77699195247825BE00C3FEE7 /* ViewController.swift */; };
 		77699199247825BE00C3FEE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77699197247825BE00C3FEE7 /* Main.storyboard */; };
 		7769919B247825BF00C3FEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7769919A247825BF00C3FEE7 /* Assets.xcassets */; };
 		7769919E247825BF00C3FEE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7769919C247825BF00C3FEE7 /* LaunchScreen.storyboard */; };
+		776991AD24782EF900C3FEE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776991AC24782EF900C3FEE7 /* HomeViewController.swift */; };
+		776991AF24782F0100C3FEE7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776991AE24782F0100C3FEE7 /* LogInViewController.swift */; };
+		776991B124782F0A00C3FEE7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776991B024782F0A00C3FEE7 /* SignUpViewController.swift */; };
+		776991B324782F1000C3FEE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776991B224782F1000C3FEE7 /* ViewController.swift */; };
+		776991B62478317800C3FEE7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776991B52478317800C3FEE7 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7769918E247825BE00C3FEE7 /* Direct iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Direct iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77699191247825BE00C3FEE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77699193247825BE00C3FEE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		77699195247825BE00C3FEE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		77699198247825BE00C3FEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7769919A247825BF00C3FEE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7769919D247825BF00C3FEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7769919F247825BF00C3FEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		776991AC24782EF900C3FEE7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		776991AE24782F0100C3FEE7 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		776991B024782F0A00C3FEE7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		776991B224782F1000C3FEE7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		776991B52478317800C3FEE7 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		77699190247825BE00C3FEE7 /* Direct iOS */ = {
 			isa = PBXGroup;
 			children = (
+				776991B42478316200C3FEE7 /* Helper */,
+				776991AB24782CD900C3FEE7 /* ViewController */,
 				77699191247825BE00C3FEE7 /* AppDelegate.swift */,
 				77699193247825BE00C3FEE7 /* SceneDelegate.swift */,
-				77699195247825BE00C3FEE7 /* ViewController.swift */,
 				77699197247825BE00C3FEE7 /* Main.storyboard */,
 				7769919A247825BF00C3FEE7 /* Assets.xcassets */,
 				7769919C247825BF00C3FEE7 /* LaunchScreen.storyboard */,
 				7769919F247825BF00C3FEE7 /* Info.plist */,
 			);
 			path = "Direct iOS";
+			sourceTree = "<group>";
+		};
+		776991AB24782CD900C3FEE7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				776991B224782F1000C3FEE7 /* ViewController.swift */,
+				776991B024782F0A00C3FEE7 /* SignUpViewController.swift */,
+				776991AE24782F0100C3FEE7 /* LogInViewController.swift */,
+				776991AC24782EF900C3FEE7 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		776991B42478316200C3FEE7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				776991B52478317800C3FEE7 /* Helpers.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77699196247825BE00C3FEE7 /* ViewController.swift in Sources */,
+				776991B324782F1000C3FEE7 /* ViewController.swift in Sources */,
+				776991B62478317800C3FEE7 /* Helpers.swift in Sources */,
+				776991AF24782F0100C3FEE7 /* LogInViewController.swift in Sources */,
 				77699192247825BE00C3FEE7 /* AppDelegate.swift in Sources */,
 				77699194247825BE00C3FEE7 /* SceneDelegate.swift in Sources */,
+				776991AD24782EF900C3FEE7 /* HomeViewController.swift in Sources */,
+				776991B124782F0A00C3FEE7 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
