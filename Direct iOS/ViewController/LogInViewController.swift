@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LogInViewController: UIViewController {
 
@@ -31,18 +32,70 @@ class LogInViewController: UIViewController {
         Helpers.styleTextField(PasswordTextField)
         Helpers.styleFilledButton(LogInButton)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func validatefields() -> String? {
+        
+        if EmailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return "Please fill in Email."
+        }
+        if PasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return "Please fill in Password."
+        }
+        
+        let baseemail = EmailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if isValidEmail(baseemail) == false {
+            // Invalid Email
+            return "Please make sure you entered a valid email."
+        }
+        
+        return nil
     }
-    */
+    
+    func isValidEmail(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
 
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
+    }
+    
+    func showerror( message:String) {
+        ErrorLabel.text = message
+        ErrorLabel.alpha = 1
+    }
+    
+    func transitionhome() {
+        
+        let homeviewcontroller = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeviewcontroller) as? HomeViewController
+        
+        view.window?.rootViewController = homeviewcontroller
+        view.window?.makeKeyAndVisible()
+        
+    }
     
     @IBAction func LogInTapped(_ sender: Any) {
+        
+        // Text Field Validation
+        let error = validatefields()
+        
+        if error != nil {
+            // There is something wrong with the fields
+            showerror(message: error!)
+        }
+        else {
+        let email = EmailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = PasswordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        // User Sign In
+            Auth.auth().signIn(withEmail: email, password: password) { (result, err) in
+                if err != nil {
+                    self.ErrorLabel.text = err!.localizedDescription
+                    self.ErrorLabel.alpha = 1
+                }
+                else {
+                    self.transitionhome()
+                }
+            }
     }
-    
+  }
 }

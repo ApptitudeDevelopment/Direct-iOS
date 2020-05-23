@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1A26DADBD72E9F1CBDD4128A /* Pods_Direct_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF40181605D0D57D9C739F0E /* Pods_Direct_iOS.framework */; };
+		772A73DC2478AF6800C46ADE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772A73DB2478AF6800C46ADE /* Constants.swift */; };
 		77699192247825BE00C3FEE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77699191247825BE00C3FEE7 /* AppDelegate.swift */; };
 		77699194247825BE00C3FEE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77699193247825BE00C3FEE7 /* SceneDelegate.swift */; };
 		77699199247825BE00C3FEE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77699197247825BE00C3FEE7 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		6262AA32D1D1FF94F2A5DA15 /* Pods-Direct iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Direct iOS.debug.xcconfig"; path = "Target Support Files/Pods-Direct iOS/Pods-Direct iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		772A73DB2478AF6800C46ADE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7769918E247825BE00C3FEE7 /* Direct iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Direct iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77699191247825BE00C3FEE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77699193247825BE00C3FEE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				776991B52478317800C3FEE7 /* Helpers.swift */,
+				772A73DB2478AF6800C46ADE /* Constants.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -119,7 +122,6 @@
 				6262AA32D1D1FF94F2A5DA15 /* Pods-Direct iOS.debug.xcconfig */,
 				E114FD0A07EAC75A10C93B0B /* Pods-Direct iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -246,6 +248,7 @@
 				77699194247825BE00C3FEE7 /* SceneDelegate.swift in Sources */,
 				776991AD24782EF900C3FEE7 /* HomeViewController.swift in Sources */,
 				776991B124782F0A00C3FEE7 /* SignUpViewController.swift in Sources */,
+				772A73DC2478AF6800C46ADE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
