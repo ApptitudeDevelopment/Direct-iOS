@@ -31,11 +31,11 @@ class SignUpViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         setUpElements()
+        assignbackground()
     }
     
     func setUpElements() {
         ErrorLabel.alpha = 0
-        
         Helpers.styleTextField(FirstNameTextField)
         Helpers.styleTextField(LastNameTextField)
         Helpers.styleTextField(EmailTextField)
@@ -94,6 +94,18 @@ class SignUpViewController: UIViewController {
         view.window?.rootViewController = homeviewcontroller
         view.window?.makeKeyAndVisible()
         
+    }
+    
+    func assignbackground(){
+        let background = UIImage(named: "background2")
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
     }
 
     @IBAction func SignUpTapped(_ sender: Any) {

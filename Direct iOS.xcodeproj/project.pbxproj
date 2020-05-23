@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1A26DADBD72E9F1CBDD4128A /* Pods_Direct_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF40181605D0D57D9C739F0E /* Pods_Direct_iOS.framework */; };
 		772A73DC2478AF6800C46ADE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772A73DB2478AF6800C46ADE /* Constants.swift */; };
+		772A73E02478C24700C46ADE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 772A73DF2478C24700C46ADE /* background.png */; };
+		772A73E22478C2D700C46ADE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 772A73E12478C2D700C46ADE /* logo.png */; };
+		772A73E42478C53D00C46ADE /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 772A73E32478C53D00C46ADE /* background2.png */; };
+		772A73E62478C95B00C46ADE /* background3.png in Resources */ = {isa = PBXBuildFile; fileRef = 772A73E52478C95B00C46ADE /* background3.png */; };
 		77699192247825BE00C3FEE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77699191247825BE00C3FEE7 /* AppDelegate.swift */; };
 		77699194247825BE00C3FEE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77699193247825BE00C3FEE7 /* SceneDelegate.swift */; };
 		77699199247825BE00C3FEE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77699197247825BE00C3FEE7 /* Main.storyboard */; };
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		6262AA32D1D1FF94F2A5DA15 /* Pods-Direct iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Direct iOS.debug.xcconfig"; path = "Target Support Files/Pods-Direct iOS/Pods-Direct iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		772A73DB2478AF6800C46ADE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		772A73DF2478C24700C46ADE /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		772A73E12478C2D700C46ADE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		772A73E32478C53D00C46ADE /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
+		772A73E52478C95B00C46ADE /* background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background3.png; sourceTree = "<group>"; };
 		7769918E247825BE00C3FEE7 /* Direct iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Direct iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77699191247825BE00C3FEE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77699193247825BE00C3FEE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +110,10 @@
 		776991B42478316200C3FEE7 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				772A73E12478C2D700C46ADE /* logo.png */,
+				772A73DF2478C24700C46ADE /* background.png */,
+				772A73E32478C53D00C46ADE /* background2.png */,
+				772A73E52478C95B00C46ADE /* background3.png */,
 				776991B52478317800C3FEE7 /* Helpers.swift */,
 				772A73DB2478AF6800C46ADE /* Constants.swift */,
 			);
@@ -186,7 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7769919E247825BF00C3FEE7 /* LaunchScreen.storyboard in Resources */,
+				772A73E62478C95B00C46ADE /* background3.png in Resources */,
 				776991BC24783FA200C3FEE7 /* GoogleService-Info.plist in Resources */,
+				772A73E02478C24700C46ADE /* background.png in Resources */,
+				772A73E42478C53D00C46ADE /* background2.png in Resources */,
+				772A73E22478C2D700C46ADE /* logo.png in Resources */,
 				7769919B247825BF00C3FEE7 /* Assets.xcassets in Resources */,
 				77699199247825BE00C3FEE7 /* Main.storyboard in Resources */,
 			);
