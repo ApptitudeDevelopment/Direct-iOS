@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VRW-hd-5uR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="okg-Sd-9ug">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Direct_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Direct_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,6 +57,7 @@
                     <connections>
                         <outlet property="LogInButton" destination="lfh-8G-jtN" id="SxA-0J-fOe"/>
                         <outlet property="SignUpButton" destination="Emf-sv-akJ" id="lDp-1Z-hZg"/>
+                        <segue destination="VRW-hd-5uR" kind="presentation" identifier="firstViewtoTabBarVC" modalPresentationStyle="fullScreen" id="Z33-PW-VZr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -168,6 +169,7 @@
                         <outlet property="LastNameTextField" destination="SBW-vA-P1L" id="omv-45-Cfn"/>
                         <outlet property="PasswordTextField" destination="tjK-eT-q4X" id="GCr-fy-ayt"/>
                         <outlet property="SignUpButton" destination="Cod-oh-kIj" id="Gez-cx-ipg"/>
+                        <segue destination="VRW-hd-5uR" kind="presentation" identifier="signIntoTabBarVC" modalPresentationStyle="fullScreen" id="8wr-VL-6iX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QWl-Cj-8ej" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -177,7 +179,7 @@
         <!--Home View Controller-->
         <scene sceneID="mPF-pp-YzK">
             <objects>
-                <viewController id="MJC-Ie-Ke0" customClass="HomeViewController" customModule="Direct_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="MJC-Ie-Ke0" customClass="HomeViewController" customModule="Direct_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MiF-Gy-W2v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGp-lF-Ohf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="2693"/>
+            <point key="canvasLocation" x="131.8840579710145" y="2692.6339285714284"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="2ST-zl-ecs">
@@ -278,6 +280,7 @@
                         <outlet property="ErrorLabel" destination="7xZ-J9-30v" id="m8O-bS-roc"/>
                         <outlet property="LogInButton" destination="7KU-Ry-Ylg" id="iCu-az-YJh"/>
                         <outlet property="PasswordTextField" destination="plS-Ua-nmR" id="Bsw-mH-6zw"/>
+                        <segue destination="VRW-hd-5uR" kind="presentation" identifier="logIntoTabBarVC" modalPresentationStyle="fullScreen" id="xR9-dm-M6b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tyD-QL-92E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -288,6 +291,7 @@
         <scene sceneID="h98-B0-WLS">
             <objects>
                 <tabBarController storyboardIdentifier="HomeVC" id="VRW-hd-5uR" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vmK-hz-Sx2"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H2p-Pl-ihC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -370,17 +374,23 @@
             </objects>
             <point key="canvasLocation" x="2219" y="2696"/>
         </scene>
-        <!--View Controller-->
+        <!--Account View Controller-->
         <scene sceneID="fGJ-Dy-XPG">
             <objects>
-                <viewController id="F1f-5j-DaU" sceneMemberID="viewController">
+                <viewController id="F1f-5j-DaU" customClass="AccountViewController" customModule="Direct_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AeW-Lc-wan">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Mf4-3N-Aoi"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kKe-Cf-t0e"/>
+                    <navigationItem key="navigationItem" id="kKe-Cf-t0e">
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="p5v-eF-pDV">
+                            <connections>
+                                <action selector="logOutButtonTapped:" destination="F1f-5j-DaU" id="0jw-I1-D7r"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XKc-YI-rzr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -455,15 +465,16 @@
             <point key="canvasLocation" x="1525" y="1988"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bell" catalog="system" width="64" height="62"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="logo.png" width="1920" height="1080"/>
+        <image name="message" catalog="system" width="64" height="56"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
+    </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="xR9-dm-M6b"/>
         <segue reference="vOn-ex-GAw"/>
     </inferredMetricsTieBreakers>
-    <resources>
-        <image name="bell" catalog="system" width="128" height="124"/>
-        <image name="house" catalog="system" width="128" height="110"/>
-        <image name="logo.png" width="1920" height="1080"/>
-        <image name="message" catalog="system" width="128" height="113"/>
-        <image name="person" catalog="system" width="128" height="117"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
-    </resources>
 </document>

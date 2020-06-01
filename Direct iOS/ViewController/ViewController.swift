@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,13 @@ class ViewController: UIViewController {
         
         setUpElements()
         assignbackground()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "firstViewtoTabBarVC", sender: nil)
+        }
     }
 
     func setUpElements() {

@@ -106,7 +106,7 @@ class LogInViewController: UIViewController {
                     self.ErrorLabel.alpha = 1
                 }
                 else {
-                    self.transitionhome()
+                    self.performSegue(withIdentifier: "logIntoTabBarVC", sender: nil)
                 }
             }
     }

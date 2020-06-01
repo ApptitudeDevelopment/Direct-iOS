@@ -108,6 +108,7 @@ class SignUpViewController: UIViewController {
         self.view.sendSubviewToBack(imageView)
     }
 
+    
     @IBAction func SignUpTapped(_ sender: Any) {
         // Input Validation
         let error = validatefields()
@@ -143,7 +144,7 @@ class SignUpViewController: UIViewController {
                         }
                     }
                     // Home Screen Transition
-                    self.transitionhome()
+                    self.performSegue(withIdentifier: "signIntoTabBarVC", sender: nil)
                 }
             }
         }
