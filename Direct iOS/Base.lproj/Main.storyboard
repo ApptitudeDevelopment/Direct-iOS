@@ -25,7 +25,7 @@
                                         </constraints>
                                         <state key="normal" title="Log In"/>
                                         <connections>
-                                            <segue destination="OVw-2N-thl" kind="show" id="qBs-Li-TSy"/>
+                                            <segue destination="OVw-2N-thl" kind="presentation" modalPresentationStyle="fullScreen" id="qBs-Li-TSy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emf-sv-akJ">
@@ -35,7 +35,7 @@
                                         </constraints>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
-                                            <segue destination="ufQ-QI-Kcj" kind="show" id="XQ7-0i-Y3S"/>
+                                            <segue destination="ufQ-QI-Kcj" kind="presentation" modalPresentationStyle="fullScreen" id="XQ7-0i-Y3S"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -96,7 +96,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
                                         <state key="normal" title="Back"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="vOn-ex-GAw"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="vOn-ex-GAw"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amt-ex-ZnS">
@@ -219,7 +219,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
                                         <state key="normal" title="Back"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="1wO-he-t6K"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="1wO-he-t6K"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1p2-u0-700">
@@ -475,6 +475,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xR9-dm-M6b"/>
-        <segue reference="EWY-7T-e2Q"/>
+        <segue reference="vOn-ex-GAw"/>
     </inferredMetricsTieBreakers>
 </document>
