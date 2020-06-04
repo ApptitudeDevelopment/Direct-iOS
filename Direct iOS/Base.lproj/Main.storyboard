@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="okg-Sd-9ug">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="okg-Sd-9ug">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Direct_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kTa-NN-8Ih">
-                                <rect key="frame" x="40" y="692" width="334" height="130"/>
+                                <rect key="frame" x="40" y="638" width="334" height="130"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfh-8G-jtN">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -86,11 +86,11 @@
             <objects>
                 <viewController id="ufQ-QI-Kcj" customClass="SignUpViewController" customModule="Direct_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J7I-QO-0Sq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="WY7-bK-uEe">
-                                <rect key="frame" x="40" y="84" width="334" height="647"/>
+                                <rect key="frame" x="40" y="40" width="334" height="647"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txZ-Su-fnc">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
@@ -209,11 +209,11 @@
             <objects>
                 <viewController id="OVw-2N-thl" customClass="LogInViewController" customModule="Direct_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="te1-Cb-S55">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9K0-q0-0Fg">
-                                <rect key="frame" x="40" y="84" width="334" height="498.5"/>
+                                <rect key="frame" x="40" y="40" width="334" height="558.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp7-8G-dMJ">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
@@ -254,8 +254,15 @@
                                             <action selector="LogInTapped:" destination="OVw-2N-thl" eventType="touchUpInside" id="fXv-zW-Owk"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIJ-nr-5V8">
+                                        <rect key="frame" x="0.0" y="398.5" width="334" height="30"/>
+                                        <state key="normal" title="Sign In with Google"/>
+                                        <connections>
+                                            <action selector="GoogleSignInTapped:" destination="OVw-2N-thl" eventType="touchUpInside" id="qFl-8l-OPx"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xZ-J9-30v">
-                                        <rect key="frame" x="0.0" y="398.5" width="334" height="100"/>
+                                        <rect key="frame" x="0.0" y="458.5" width="334" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="IxH-Ld-xHf"/>
                                         </constraints>
@@ -465,16 +472,24 @@
             <point key="canvasLocation" x="1525" y="1988"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qBs-Li-TSy"/>
+        <segue reference="Z33-PW-VZr"/>
+        <segue reference="1wO-he-t6K"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="bell" catalog="system" width="64" height="62"/>
-        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="bell" catalog="system" width="128" height="124"/>
+        <image name="house" catalog="system" width="128" height="110"/>
         <image name="logo.png" width="1920" height="1080"/>
-        <image name="message" catalog="system" width="64" height="56"/>
-        <image name="person" catalog="system" width="64" height="58"/>
-        <image name="plus" catalog="system" width="64" height="56"/>
+        <image name="message" catalog="system" width="128" height="113"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
     </resources>
+<<<<<<< HEAD
     <inferredMetricsTieBreakers>
         <segue reference="xR9-dm-M6b"/>
         <segue reference="vOn-ex-GAw"/>
     </inferredMetricsTieBreakers>
+=======
+>>>>>>> ee9563c24315537e18a2c9c06520c7c712ecfe66
 </document>

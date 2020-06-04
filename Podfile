@@ -13,5 +13,8 @@ target 'Direct iOS' do
 	pod 'Firebase/Auth'
 	pod 'Firebase/Core'
 	pod 'Firebase/Firestore'
-
+        pod 'GoogleSignIn'
+	pod 'MessageKit'
+	pod 'SDWebImage'
+  
 end
