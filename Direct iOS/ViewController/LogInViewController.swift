@@ -8,9 +8,10 @@
 
 import UIKit
 import FirebaseAuth
+import GoogleSignIn
 
-class LogInViewController: UIViewController {
-
+class LogInViewController: UIViewController, GIDSignInDelegate {
+    
     @IBOutlet weak var EmailTextField: UITextField!
     
     @IBOutlet weak var PasswordTextField: UITextField!
@@ -25,6 +26,9 @@ class LogInViewController: UIViewController {
         // Do any additional setup after loading the view.
         setUpElements()
         assignbackground()
+        
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance()?.delegate = self
     }
     
     func setUpElements() {
@@ -86,7 +90,31 @@ class LogInViewController: UIViewController {
         self.view.sendSubviewToBack(imageView)
     }
     
-    @IBAction func LogInTapped(_ sender: Any) {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+        print(error.localizedDescription)
+        return
+        }
+        guard let auth = user.authentication else { return }
+        let credentials = GoogleAuthProvider.credential(withIDToken: auth.idToken, accessToken: auth.accessToken)
+        Auth.auth().signIn(with: credentials) { (authResult, error) in
+        if let error = error {
+        print(error.localizedDescription)
+        } else {
+            print("Login Successful")
+        //This is where you should add the functionality of successful login
+        //i.e. dismissing this view or push the home view controller etc
+             self.performSegue(withIdentifier: "logIntoTabBarVC", sender: nil)
+        }
+    }
+}
+    
+        func GoogleSignInTapped(_ sender: Any) {
+        GIDSignIn.sharedInstance()?.signIn()
+    }
+    
+    
+        func LogInTapped(_ sender: Any) {
         
         // Text Field Validation
         let error = validatefields()
@@ -112,3 +140,4 @@ class LogInViewController: UIViewController {
     }
   }
 }
+

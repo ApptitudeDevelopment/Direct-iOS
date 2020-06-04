@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if Auth.auth().currentUser != nil {
+        if Auth.auth().currentUser?.uid != nil {
             self.performSegue(withIdentifier: "firstViewtoTabBarVC", sender: nil)
         }
     }

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +19,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
+        
+        GIDSignIn.sharedInstance().clientID = "275753575698-h3pj47l228c16hk55dh62ai46sfe3t6a.apps.googleusercontent.com"
+        
         return true
+    }
+    
+
+    
+    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any])
+      -> Bool {
+        
+        let handled = GIDSignIn.sharedInstance().handle(url)
+        
+        return handled
     }
 
     // MARK: UISceneSession Lifecycle
