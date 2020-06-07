@@ -16,10 +16,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kTa-NN-8Ih">
-                                <rect key="frame" x="40" y="638" width="334" height="130"/>
+                                <rect key="frame" x="40" y="407.5" width="334" height="360.5"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qK4-hb-fKX">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Sign In with Google">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0E-LH-iKM">
+                                        <rect key="frame" x="0.0" y="60" width="334" height="30"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Sign In with Facebook">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hii-ZM-NVJ">
+                                        <rect key="frame" x="0.0" y="120" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfh-8G-jtN">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                        <rect key="frame" x="0.0" y="170.5" width="334" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="gSO-Jj-avx"/>
                                         </constraints>
@@ -29,7 +49,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emf-sv-akJ">
-                                        <rect key="frame" x="0.0" y="80" width="334" height="50"/>
+                                        <rect key="frame" x="0.0" y="250.5" width="334" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="vo8-ML-abn"/>
                                         </constraints>
@@ -38,10 +58,35 @@
                                             <segue destination="ufQ-QI-Kcj" kind="show" id="XQ7-0i-Y3S"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-IR-4lr">
+                                        <rect key="frame" x="0.0" y="330.5" width="334" height="30"/>
+                                        <state key="normal" title="Terms of Service"/>
+                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="G0E-LH-iKM" firstAttribute="top" secondItem="qK4-hb-fKX" secondAttribute="bottom" constant="20" id="1My-9p-f5e"/>
+                                    <constraint firstAttribute="trailing" secondItem="qK4-hb-fKX" secondAttribute="trailing" constant="20" id="5BF-by-ga4"/>
+                                    <constraint firstAttribute="trailing" secondItem="G0E-LH-iKM" secondAttribute="trailing" constant="20" id="GIt-Hi-6lS"/>
+                                    <constraint firstItem="Bga-IR-4lr" firstAttribute="top" secondItem="Emf-sv-akJ" secondAttribute="bottom" constant="20" id="GSF-nH-Bb2"/>
+                                    <constraint firstItem="qK4-hb-fKX" firstAttribute="leading" secondItem="kTa-NN-8Ih" secondAttribute="leading" constant="20" id="GwY-te-zho"/>
+                                    <constraint firstItem="Emf-sv-akJ" firstAttribute="leading" secondItem="kTa-NN-8Ih" secondAttribute="leading" constant="20" id="PUJ-eT-SVz"/>
+                                    <constraint firstAttribute="trailing" secondItem="lfh-8G-jtN" secondAttribute="trailing" constant="20" id="QAg-6j-Sny"/>
+                                    <constraint firstItem="qK4-hb-fKX" firstAttribute="leading" secondItem="kTa-NN-8Ih" secondAttribute="leading" constant="20" id="QCo-mh-cP4"/>
+                                    <constraint firstItem="Emf-sv-akJ" firstAttribute="top" secondItem="lfh-8G-jtN" secondAttribute="bottom" constant="20" id="Qmb-PE-65a"/>
+                                    <constraint firstItem="Bga-IR-4lr" firstAttribute="top" secondItem="Emf-sv-akJ" secondAttribute="bottom" constant="20" id="RTF-Vg-IpI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Emf-sv-akJ" secondAttribute="trailing" constant="20" id="bSs-1c-196"/>
+                                    <constraint firstItem="Emf-sv-akJ" firstAttribute="top" secondItem="lfh-8G-jtN" secondAttribute="bottom" constant="20" id="iZ4-n7-oXn"/>
+                                    <constraint firstItem="G0E-LH-iKM" firstAttribute="leading" secondItem="kTa-NN-8Ih" secondAttribute="leading" constant="20" id="lc0-8M-PqY"/>
+                                    <constraint firstAttribute="trailing" secondItem="qK4-hb-fKX" secondAttribute="trailing" constant="20" id="o0C-Yr-HoQ"/>
+                                    <constraint firstItem="Bga-IR-4lr" firstAttribute="leading" secondItem="kTa-NN-8Ih" secondAttribute="leading" constant="20" id="tre-ol-reM"/>
+                                    <constraint firstItem="G0E-LH-iKM" firstAttribute="top" secondItem="qK4-hb-fKX" secondAttribute="bottom" constant="20" id="wBp-JG-D2J"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bga-IR-4lr" secondAttribute="trailing" constant="20" id="wSL-MX-flc"/>
+                                    <constraint firstItem="lfh-8G-jtN" firstAttribute="leading" secondItem="kTa-NN-8Ih" secondAttribute="leading" constant="20" id="wZV-BS-A4b"/>
+                                    <constraint firstItem="qK4-hb-fKX" firstAttribute="top" secondItem="kTa-NN-8Ih" secondAttribute="top" constant="30" id="zNj-kA-QVi"/>
+                                </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="1U0-zn-7tf">
-                                <rect key="frame" x="-128" y="20" width="670" height="550"/>
+                                <rect key="frame" x="-128" y="-80" width="670" height="550"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -55,8 +100,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="mHd-Mw-rVm"/>
                     <connections>
+                        <outlet property="FacebookSignIn" destination="G0E-LH-iKM" id="QuO-v2-TYu"/>
+                        <outlet property="GoogleSignIn" destination="1U0-zn-7tf" id="7di-Di-Q8B"/>
                         <outlet property="LogInButton" destination="lfh-8G-jtN" id="SxA-0J-fOe"/>
                         <outlet property="SignUpButton" destination="Emf-sv-akJ" id="lDp-1Z-hZg"/>
+                        <outlet property="TermsOfServiceButton" destination="Bga-IR-4lr" id="bX8-H4-IyL"/>
+                        <outlet property="orLabel" destination="hii-ZM-NVJ" id="LpO-ir-Igy"/>
                         <segue destination="VRW-hd-5uR" kind="presentation" identifier="firstViewtoTabBarVC" modalPresentationStyle="fullScreen" id="Z33-PW-VZr"/>
                     </connections>
                 </viewController>
