@@ -92,8 +92,8 @@
 				77699191247825BE00C3FEE7 /* AppDelegate.swift */,
 				77699193247825BE00C3FEE7 /* SceneDelegate.swift */,
 				77699197247825BE00C3FEE7 /* Main.storyboard */,
-				7769919A247825BF00C3FEE7 /* Assets.xcassets */,
 				7769919C247825BF00C3FEE7 /* LaunchScreen.storyboard */,
+				7769919A247825BF00C3FEE7 /* Assets.xcassets */,
 				7769919F247825BF00C3FEE7 /* Info.plist */,
 				776991BB24783FA200C3FEE7 /* GoogleService-Info.plist */,
 			);
