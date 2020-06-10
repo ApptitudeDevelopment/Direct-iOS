@@ -11,9 +11,10 @@ import Firebase
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var GoogleSignIn: UIImageView!
     
-    @IBOutlet weak var FacebookSignIn: UIButton!
+    @IBOutlet weak var SignInGoogle: UIButton!
+    
+    @IBOutlet weak var SignInFacebookButton: UIButton!
     
     @IBOutlet weak var orLabel: UILabel!
     
@@ -40,7 +41,32 @@ class ViewController: UIViewController {
     func setUpElements() {
         Helpers.styleFilledButton(SignUpButton)
         Helpers.styleHollowButton(LogInButton)
+        
+        orLabel.text = "Or"
+        orLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        orLabel.textColor = UIColor(white: 0, alpha: 0.45)
+        orLabel.textAlignment = .center
           
+        SignInFacebookButton.setTitle("Sign in with Facebook", for: UIControl.State.normal)
+        SignInFacebookButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        SignInFacebookButton.backgroundColor = UIColor(red: 58/255, green: 85/255, blue: 159/255, alpha: 1)
+        SignInFacebookButton.layer.cornerRadius = 5
+        SignInFacebookButton.clipsToBounds = true
+        SignInFacebookButton.setImage(UIImage(named: "icon-facebook"), for: UIControl.State.normal)
+        SignInFacebookButton.imageView?.contentMode = .scaleAspectFit
+        SignInFacebookButton.tintColor = .white
+        SignInFacebookButton.imageEdgeInsets = UIEdgeInsets(top: 12, left: -30, bottom: 12, right: 0)
+        
+        SignInGoogle.setTitle("Sign in with Google", for: UIControl.State.normal)
+        SignInGoogle.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        SignInGoogle.backgroundColor = UIColor(red: 223/255, green: 74/255, blue: 50/255, alpha: 1)
+        SignInGoogle.layer.cornerRadius = 5
+        SignInGoogle.clipsToBounds = true
+        SignInGoogle.setImage(UIImage(named: "google"), for: UIControl.State.normal)
+        SignInGoogle.imageView?.contentMode = .scaleAspectFit
+        SignInGoogle.tintColor = .white
+        SignInGoogle.imageEdgeInsets = UIEdgeInsets(top: 12, left: -30, bottom: 12, right: 0)
+       
     }
 
     func assignbackground(){

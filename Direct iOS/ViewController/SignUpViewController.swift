@@ -14,6 +14,8 @@ import FirebaseFirestore
 class SignUpViewController: UIViewController {
 
     
+    @IBOutlet weak var avatar: UIImageView!
+    
     @IBOutlet weak var FirstNameTextField: UITextField!
     
     @IBOutlet weak var LastNameTextField: UITextField!
@@ -36,6 +38,8 @@ class SignUpViewController: UIViewController {
     
     func setUpElements() {
         ErrorLabel.alpha = 0
+        avatar.layer.cornerRadius = 40
+        avatar.clipsToBounds = true
         Helpers.styleTextField(FirstNameTextField)
         Helpers.styleTextField(LastNameTextField)
         Helpers.styleTextField(EmailTextField)

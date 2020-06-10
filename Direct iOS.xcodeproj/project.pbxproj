@@ -90,6 +90,7 @@
 				776991B42478316200C3FEE7 /* Helper */,
 				776991AB24782CD900C3FEE7 /* ViewController */,
 				77699191247825BE00C3FEE7 /* AppDelegate.swift */,
+				775D5155248581B400F5DF47 /* AccountViewController.swift */,
 				77699193247825BE00C3FEE7 /* SceneDelegate.swift */,
 				77699197247825BE00C3FEE7 /* Main.storyboard */,
 				7769919C247825BF00C3FEE7 /* LaunchScreen.storyboard */,
@@ -107,7 +108,6 @@
 				776991B024782F0A00C3FEE7 /* SignUpViewController.swift */,
 				776991AE24782F0100C3FEE7 /* LogInViewController.swift */,
 				776991AC24782EF900C3FEE7 /* HomeViewController.swift */,
-				775D5155248581B400F5DF47 /* AccountViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
