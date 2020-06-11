@@ -485,7 +485,6 @@
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="plus" catalog="system" width="128" height="113"/>
     </resources>
-<<<<<<< HEAD
     <inferredMetricsTieBreakers>
         <segue reference="xR9-dm-M6b"/>
         <segue reference="vOn-ex-GAw"/>
