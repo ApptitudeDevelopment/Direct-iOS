@@ -16,5 +16,4 @@ target 'Direct iOS' do
         pod 'GoogleSignIn'
 	pod 'MessageKit'
 	pod 'SDWebImage'
-  
 end

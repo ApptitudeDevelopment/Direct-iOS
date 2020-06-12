@@ -11,14 +11,27 @@ import Firebase
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var SignInGoogle: UIButton!
+    
+    @IBOutlet weak var SignInFacebookButton: UIButton!
+    
+    @IBOutlet weak var orLabel: UILabel!
+    
     @IBOutlet weak var SignUpButton: UIButton!
     
     @IBOutlet weak var LogInButton: UIButton!
     
+    @IBOutlet weak var TermsOfServiceButton: UIButton!
+    
+    @IBOutlet weak var GoogleButton: UIButton!
+    
+    @IBOutlet weak var FacebookButton: UIButton!
+
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
         setUpElements()
         assignbackground()
     }
@@ -33,6 +46,11 @@ class ViewController: UIViewController {
     func setUpElements() {
         Helpers.styleFilledButton(SignUpButton)
         Helpers.styleHollowButton(LogInButton)
+        Helpers.styleGoogleButton(GoogleButton)
+        Helpers.styleFacebookButton(FacebookButton)
+        
+
+       
     }
 
     func assignbackground(){
