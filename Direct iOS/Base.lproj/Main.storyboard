@@ -20,18 +20,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kTa-NN-8Ih">
-                                <rect key="frame" x="40" y="461.5" width="334" height="360.5"/>
+                                <rect key="frame" x="40" y="421.5" width="334" height="400.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSh-5H-S5m">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="V36-pr-N5A"/>
+                                        </constraints>
                                         <state key="normal" title="Facebook"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyd-FH-wHT">
-                                        <rect key="frame" x="0.0" y="60" width="334" height="30"/>
+                                        <rect key="frame" x="0.0" y="80" width="334" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="zsb-0V-9Qb"/>
+                                        </constraints>
                                         <state key="normal" title="Google"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hii-ZM-NVJ">
-                                        <rect key="frame" x="0.0" y="120" width="334" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="160" width="334" height="20.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20.5" id="2E7-uB-ng4"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="Hxu-Q4-kF4"/>
@@ -41,7 +47,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfh-8G-jtN">
-                                        <rect key="frame" x="0.0" y="170.5" width="334" height="50"/>
+                                        <rect key="frame" x="0.0" y="210.5" width="334" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="gSO-Jj-avx"/>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="nRE-de-cUD"/>
@@ -53,7 +59,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emf-sv-akJ">
-                                        <rect key="frame" x="0.0" y="250.5" width="334" height="50"/>
+                                        <rect key="frame" x="0.0" y="290.5" width="334" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Btz-iT-CR1"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="vo8-ML-abn"/>
@@ -65,7 +71,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-IR-4lr">
-                                        <rect key="frame" x="0.0" y="330.5" width="334" height="30"/>
+                                        <rect key="frame" x="0.0" y="370.5" width="334" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="s5u-GM-Qjk"/>
                                         </constraints>
@@ -540,7 +546,8 @@
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8wr-VL-6iX"/>
+        <segue reference="XQ7-0i-Y3S"/>
+        <segue reference="Z33-PW-VZr"/>
         <segue reference="vOn-ex-GAw"/>
     </inferredMetricsTieBreakers>
 </document>
