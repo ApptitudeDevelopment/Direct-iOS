@@ -12,8 +12,8 @@ target 'Direct iOS' do
 	# https://firebase.google.com/docs/ios/setup#available-pods
 	pod 'Firebase/Auth'
 	pod 'Firebase/Core'
-	pod 'Firebase/Firestore'
-        pod 'GoogleSignIn'
+  pod 'Firebase/Database'
+	pod 'Firebase/Storage'
+  pod 'GoogleSignIn'
 	pod 'MessageKit'
-	pod 'SDWebImage'
 end

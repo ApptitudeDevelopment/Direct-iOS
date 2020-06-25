@@ -26,6 +26,14 @@
 		776991B324782F1000C3FEE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776991B224782F1000C3FEE7 /* ViewController.swift */; };
 		776991B62478317800C3FEE7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776991B52478317800C3FEE7 /* Helpers.swift */; };
 		776991BC24783FA200C3FEE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 776991BB24783FA200C3FEE7 /* GoogleService-Info.plist */; };
+		BE8B4F03249C311200C6A9F0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8B4F02249C311200C6A9F0 /* WelcomeViewController.swift */; };
+		BE98344124A1A7D300DBF8AF /* WelcomeViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98344024A1A7D300DBF8AF /* WelcomeViewController+UI.swift */; };
+		BE98344524A1AC0A00DBF8AF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98344424A1AC0A00DBF8AF /* CreateAccountViewController.swift */; };
+		BE98344924A1BC8900DBF8AF /* CreateAccountViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98344824A1BC8900DBF8AF /* CreateAccountViewController+UI.swift */; };
+		BE98344B24A28D7D00DBF8AF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98344A24A28D7D00DBF8AF /* SignInViewController.swift */; };
+		BE98344D24A2923300DBF8AF /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98344C24A2923300DBF8AF /* SignInViewController+UI.swift */; };
+		BE98344F24A2964000DBF8AF /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98344E24A2964000DBF8AF /* ForgotPasswordViewController.swift */; };
+		BE98345124A2966300DBF8AF /* ForgotPasswordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98345024A2966300DBF8AF /* ForgotPasswordViewController+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +58,14 @@
 		776991B224782F1000C3FEE7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		776991B52478317800C3FEE7 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		776991BB24783FA200C3FEE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BE8B4F02249C311200C6A9F0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		BE98344024A1A7D300DBF8AF /* WelcomeViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeViewController+UI.swift"; sourceTree = "<group>"; };
+		BE98344424A1AC0A00DBF8AF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		BE98344824A1BC8900DBF8AF /* CreateAccountViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountViewController+UI.swift"; sourceTree = "<group>"; };
+		BE98344A24A28D7D00DBF8AF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		BE98344C24A2923300DBF8AF /* SignInViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
+		BE98344E24A2964000DBF8AF /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		BE98345024A2966300DBF8AF /* ForgotPasswordViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPasswordViewController+UI.swift"; sourceTree = "<group>"; };
 		E114FD0A07EAC75A10C93B0B /* Pods-Direct iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Direct iOS.release.xcconfig"; path = "Target Support Files/Pods-Direct iOS/Pods-Direct iOS.release.xcconfig"; sourceTree = "<group>"; };
 		FF40181605D0D57D9C739F0E /* Pods_Direct_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Direct_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,10 +120,18 @@
 		776991AB24782CD900C3FEE7 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				776991B224782F1000C3FEE7 /* ViewController.swift */,
+				BE98344E24A2964000DBF8AF /* ForgotPasswordViewController.swift */,
+				BE98345024A2966300DBF8AF /* ForgotPasswordViewController+UI.swift */,
+				BE98344A24A28D7D00DBF8AF /* SignInViewController.swift */,
+				BE98344C24A2923300DBF8AF /* SignInViewController+UI.swift */,
+				BE98344424A1AC0A00DBF8AF /* CreateAccountViewController.swift */,
+				BE98344824A1BC8900DBF8AF /* CreateAccountViewController+UI.swift */,
+				BE8B4F02249C311200C6A9F0 /* WelcomeViewController.swift */,
+				BE98344024A1A7D300DBF8AF /* WelcomeViewController+UI.swift */,
 				776991B024782F0A00C3FEE7 /* SignUpViewController.swift */,
 				776991AE24782F0100C3FEE7 /* LogInViewController.swift */,
 				776991AC24782EF900C3FEE7 /* HomeViewController.swift */,
+				776991B224782F1000C3FEE7 /* ViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -282,12 +306,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE98344F24A2964000DBF8AF /* ForgotPasswordViewController.swift in Sources */,
+				BE98344D24A2923300DBF8AF /* SignInViewController+UI.swift in Sources */,
+				BE98344B24A28D7D00DBF8AF /* SignInViewController.swift in Sources */,
+				BE98344524A1AC0A00DBF8AF /* CreateAccountViewController.swift in Sources */,
 				776991B324782F1000C3FEE7 /* ViewController.swift in Sources */,
+				BE98344924A1BC8900DBF8AF /* CreateAccountViewController+UI.swift in Sources */,
+				BE8B4F03249C311200C6A9F0 /* WelcomeViewController.swift in Sources */,
 				776991B62478317800C3FEE7 /* Helpers.swift in Sources */,
 				776991AF24782F0100C3FEE7 /* LogInViewController.swift in Sources */,
 				77699192247825BE00C3FEE7 /* AppDelegate.swift in Sources */,
 				77699194247825BE00C3FEE7 /* SceneDelegate.swift in Sources */,
+				BE98345124A2966300DBF8AF /* ForgotPasswordViewController+UI.swift in Sources */,
 				776991AD24782EF900C3FEE7 /* HomeViewController.swift in Sources */,
+				BE98344124A1A7D300DBF8AF /* WelcomeViewController+UI.swift in Sources */,
 				776991B124782F0A00C3FEE7 /* SignUpViewController.swift in Sources */,
 				772A73DC2478AF6800C46ADE /* Constants.swift in Sources */,
 				775D5156248581B400F5DF47 /* AccountViewController.swift in Sources */,

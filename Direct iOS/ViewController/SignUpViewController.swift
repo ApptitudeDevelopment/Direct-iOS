@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
-import FirebaseFirestore
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
 
@@ -40,11 +40,23 @@ class SignUpViewController: UIViewController {
         ErrorLabel.alpha = 0
         avatar.layer.cornerRadius = 40
         avatar.clipsToBounds = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(presentPicker))
+        avatar.addGestureRecognizer(tapGesture)
         Helpers.styleTextField(FirstNameTextField)
         Helpers.styleTextField(LastNameTextField)
         Helpers.styleTextField(EmailTextField)
         Helpers.styleTextField(PasswordTextField)
         Helpers.styleFilledButton(SignUpButton)
+    }
+    
+    @objc func presentPicker(){
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        self.present(picker, animated: true, completion: nil)
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 
     // Makes sure that data is correct for text fields
@@ -114,6 +126,7 @@ class SignUpViewController: UIViewController {
 
     
     @IBAction func SignUpTapped(_ sender: Any) {
+        self.view.endEditing(true)
         // Input Validation
         let error = validatefields()
         
@@ -135,7 +148,7 @@ class SignUpViewController: UIViewController {
                     // There was an error creating the user
                     self.showerror(message: "Error creating user")
                 }
-                else {
+                /*else {
                     
                     // User was created successfully, now store the first name and last name
                     let db = Firestore.firestore()
@@ -149,9 +162,25 @@ class SignUpViewController: UIViewController {
                     }
                     // Home Screen Transition
                     self.performSegue(withIdentifier: "signIntoTabBarVC", sender: nil)
+                }*/
+                
+                if let authData = result {
+                    print(authData.user.email)
+                    let dict: Dictionary<String, Any> = [
+                        "uid": authData.user.uid,
+                        "email": authData.user.email,
+                        "profileImageUrl": "",
+                        "status": "Welcome to Direct"
+                    ]
+                    Database.database().reference().child("user").child(authData.user.uid).updateChildValues(dict, withCompletionBlock: {
+                        (error, ref) in
+                        if error == nil {
+                            print("Done")
+                        }
+                    })
+                    
                 }
             }
         }
     }
-    
 }
