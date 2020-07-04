@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ewf-my-LWd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ewf-my-LWd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -911,14 +911,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGi-rM-jDm">
-                                <rect key="frame" x="20" y="44" width="16" height="22"/>
+                                <rect key="frame" x="20" y="44" width="31" height="30"/>
                                 <state key="normal" image="close"/>
                                 <connections>
                                     <action selector="dismissAction:" destination="8gB-PL-sKV" eventType="touchUpInside" id="9Bt-uw-W7J"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zN1-c4-wo8">
-                                <rect key="frame" x="20" y="106" width="374" height="50"/>
+                                <rect key="frame" x="20" y="114" width="374" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XPP-Qm-IFD">
                                         <rect key="frame" x="20" y="5" width="354" height="40"/>
@@ -938,7 +938,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiQ-9C-m9V">
-                                <rect key="frame" x="20" y="186" width="374" height="50"/>
+                                <rect key="frame" x="20" y="194" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="aLS-Jl-aF1"/>
                                 </constraints>
@@ -990,17 +990,17 @@
             <point key="canvasLocation" x="157.97101449275362" y="-922.09821428571422"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bell" catalog="system" width="64" height="62"/>
+        <image name="close" width="15.5" height="15"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="logo.png" width="1920" height="1080"/>
+        <image name="message" catalog="system" width="64" height="56"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8wr-VL-6iX"/>
         <segue reference="vOn-ex-GAw"/>
     </inferredMetricsTieBreakers>
-    <resources>
-        <image name="bell" catalog="system" width="128" height="124"/>
-        <image name="close" width="15.5" height="15"/>
-        <image name="house" catalog="system" width="128" height="110"/>
-        <image name="logo.png" width="1920" height="1080"/>
-        <image name="message" catalog="system" width="128" height="113"/>
-        <image name="person" catalog="system" width="128" height="117"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
-    </resources>
 </document>
