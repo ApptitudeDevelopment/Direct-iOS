@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
+import ProgressHUD
 
 class CreateAccountViewController: UIViewController{
     
@@ -52,58 +53,17 @@ class CreateAccountViewController: UIViewController{
     @IBAction func dismissAction(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    
+    
     @IBAction func signUpButtonDidTapped(_ sender: Any) {
-        guard let imageSelected = self.image else{
-            print("Avatar is nil")
-            return
+        self.view.endEditing(true)
+        self.validateFeilds()
+        self.signUp(onSuccess: {
+            // switch view
+        }) { (errorMessage) in
+            ProgressHUD.showError(errorMessage)
         }
         
-        guard let imageData = imageSelected.jpegData(compressionQuality: 0.4) else{
-            return
-        }
-            Auth.auth().createUser(withEmail: "test9@gmail.com", password: "123456") { (authDataResult, error) in
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
-            if let authData = authDataResult {
-                print(authData.user.email)
-                var dict: Dictionary<String, Any> =  [
-                    "uid": authData.user.uid,
-                    "email": authData.user.email,
-                    "profileImageUrl": "",
-                    "status": "Welcome to Direct"
-                ]
-                
-                let storageRef = Storage.storage().reference(forURL: "gs://direct-ios-app.appspot.com")
-                
-                let storageProfileRef = storageRef.child("profile").child(authData.user.uid)
-                
-                let metadata = StorageMetadata()
-                metadata.contentType = "image/jpg"
-                storageProfileRef.putData(imageData, metadata: metadata, completion: { (StorageMetadata, error) in
-                    if error != nil{
-                        print(error?.localizedDescription)
-                        return
-                    }
-                    storageProfileRef.downloadURL(completion: { (url,error) in
-                        if let metaImageUrl = url?.absoluteString{
-                            dict["profileImageUrl"] = metaImageUrl
-                        
-                            Database.database().reference().child("Users")
-                                               .child(authData.user.uid).updateChildValues(dict, withCompletionBlock: { (error, ref) in
-                                               if error == nil {
-                                                   print("Done")
-                                               }
-                                           })
-                        }
-                    })
-                    
-                })
-                
-               
-            }
-        }
     }
     
 }

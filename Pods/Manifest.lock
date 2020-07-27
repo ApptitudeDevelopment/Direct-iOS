@@ -106,6 +106,7 @@ PODS:
     - nanopb/encode (= 1.30905.0)
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
+  - ProgressHUD (13.4)
   - PromisesObjC (1.2.9)
 
 DEPENDENCIES:
@@ -116,6 +117,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - GoogleSignIn
   - MessageKit
+  - ProgressHUD
 
 SPEC REPOS:
   trunk:
@@ -139,6 +141,7 @@ SPEC REPOS:
     - leveldb-library
     - MessageKit
     - nanopb
+    - ProgressHUD
     - PromisesObjC
 
 SPEC CHECKSUMS:
@@ -162,8 +165,9 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   MessageKit: 3beb578737a5aa2bba25cc27c7b6d6faa09af5a7
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
+  ProgressHUD: 137a7fc677487c5581668f4490563124fb35c232
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
 
-PODFILE CHECKSUM: 709b4a7b8f7c0ead3e6e1e933de4ae646dff5560
+PODFILE CHECKSUM: 9c4bde250519acf6fbde93ee9b4993da5efc840a
 
 COCOAPODS: 1.9.3

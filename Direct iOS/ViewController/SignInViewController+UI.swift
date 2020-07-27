@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 extension SignInViewController {
     
@@ -68,5 +69,30 @@ extension SignInViewController {
         signUpButton.setAttributedTitle(attributedText, for: UIControl.State.normal)
         
     }
+    
+    func validateFields() {
+        
+        guard let email = self.emailTextField.text, !email.isEmpty else {
+            ProgressHUD.showError(ERROR_EMPTY_EMAIL)
+            
+            return
+        }
+        guard let password = self.passwordTextField.text, !password.isEmpty else {
+            ProgressHUD.showError(ERROR_EMPTY_PASSWORD)
+            
+            return
+        }
+        
+    }
+    
+    func signIn(onSuccess: @escaping() -> Void, onError: @escaping(_ errorMessage: String) -> Void) {
+            ProgressHUD.show()
+            Api.User.signIn(email: self.emailTextField.text!, password: passwordTextField.text!, onSuccess: {
+                ProgressHUD.dismiss()
+                onSuccess()
+            }) { (errorMessage) in
+                onError(errorMessage)
+            }
+        }
     
 }

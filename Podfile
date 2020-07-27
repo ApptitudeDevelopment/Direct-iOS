@@ -16,4 +16,5 @@ target 'Direct iOS' do
 	pod 'Firebase/Storage'
   pod 'GoogleSignIn'
 	pod 'MessageKit'
+  pod 'ProgressHUD'
 end

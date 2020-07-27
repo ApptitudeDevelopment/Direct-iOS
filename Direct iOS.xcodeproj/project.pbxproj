@@ -14,19 +14,17 @@
 		772A73E42478C53D00C46ADE /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 772A73E32478C53D00C46ADE /* background2.png */; };
 		772A73E62478C95B00C46ADE /* background3.png in Resources */ = {isa = PBXBuildFile; fileRef = 772A73E52478C95B00C46ADE /* background3.png */; };
 		775D51522485750400F5DF47 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 775D51512485750400F5DF47 /* image.png */; };
-		775D5156248581B400F5DF47 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D5155248581B400F5DF47 /* AccountViewController.swift */; };
 		77699192247825BE00C3FEE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77699191247825BE00C3FEE7 /* AppDelegate.swift */; };
 		77699194247825BE00C3FEE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77699193247825BE00C3FEE7 /* SceneDelegate.swift */; };
 		77699199247825BE00C3FEE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77699197247825BE00C3FEE7 /* Main.storyboard */; };
 		7769919B247825BF00C3FEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7769919A247825BF00C3FEE7 /* Assets.xcassets */; };
 		7769919E247825BF00C3FEE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7769919C247825BF00C3FEE7 /* LaunchScreen.storyboard */; };
-		776991AD24782EF900C3FEE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776991AC24782EF900C3FEE7 /* HomeViewController.swift */; };
-		776991AF24782F0100C3FEE7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776991AE24782F0100C3FEE7 /* LogInViewController.swift */; };
-		776991B124782F0A00C3FEE7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776991B024782F0A00C3FEE7 /* SignUpViewController.swift */; };
 		776991B324782F1000C3FEE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776991B224782F1000C3FEE7 /* ViewController.swift */; };
 		776991B62478317800C3FEE7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776991B52478317800C3FEE7 /* Helpers.swift */; };
 		776991BC24783FA200C3FEE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 776991BB24783FA200C3FEE7 /* GoogleService-Info.plist */; };
 		BE8B4F03249C311200C6A9F0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8B4F02249C311200C6A9F0 /* WelcomeViewController.swift */; };
+		BE91A78A24B17CF100CDDCA7 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE91A78924B17CF100CDDCA7 /* Api.swift */; };
+		BE91A78E24B17DEF00CDDCA7 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE91A78D24B17DEF00CDDCA7 /* UserApi.swift */; };
 		BE98344124A1A7D300DBF8AF /* WelcomeViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98344024A1A7D300DBF8AF /* WelcomeViewController+UI.swift */; };
 		BE98344524A1AC0A00DBF8AF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98344424A1AC0A00DBF8AF /* CreateAccountViewController.swift */; };
 		BE98344924A1BC8900DBF8AF /* CreateAccountViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98344824A1BC8900DBF8AF /* CreateAccountViewController+UI.swift */; };
@@ -34,6 +32,8 @@
 		BE98344D24A2923300DBF8AF /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98344C24A2923300DBF8AF /* SignInViewController+UI.swift */; };
 		BE98344F24A2964000DBF8AF /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98344E24A2964000DBF8AF /* ForgotPasswordViewController.swift */; };
 		BE98345124A2966300DBF8AF /* ForgotPasswordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98345024A2966300DBF8AF /* ForgotPasswordViewController+UI.swift */; };
+		BE9B22DE24B9072D00CF67D4 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B22DD24B9072D00CF67D4 /* StorageService.swift */; };
+		BE9B22E024B96F0400CF67D4 /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B22DF24B96F0400CF67D4 /* Ref.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,6 @@
 		772A73E32478C53D00C46ADE /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
 		772A73E52478C95B00C46ADE /* background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background3.png; sourceTree = "<group>"; };
 		775D51512485750400F5DF47 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
-		775D5155248581B400F5DF47 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		7769918E247825BE00C3FEE7 /* Direct iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Direct iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77699191247825BE00C3FEE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77699193247825BE00C3FEE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,13 +51,12 @@
 		7769919A247825BF00C3FEE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7769919D247825BF00C3FEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7769919F247825BF00C3FEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		776991AC24782EF900C3FEE7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		776991AE24782F0100C3FEE7 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		776991B024782F0A00C3FEE7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		776991B224782F1000C3FEE7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		776991B52478317800C3FEE7 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		776991BB24783FA200C3FEE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE8B4F02249C311200C6A9F0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		BE91A78924B17CF100CDDCA7 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		BE91A78D24B17DEF00CDDCA7 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		BE98344024A1A7D300DBF8AF /* WelcomeViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeViewController+UI.swift"; sourceTree = "<group>"; };
 		BE98344424A1AC0A00DBF8AF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		BE98344824A1BC8900DBF8AF /* CreateAccountViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountViewController+UI.swift"; sourceTree = "<group>"; };
@@ -66,6 +64,8 @@
 		BE98344C24A2923300DBF8AF /* SignInViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
 		BE98344E24A2964000DBF8AF /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		BE98345024A2966300DBF8AF /* ForgotPasswordViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPasswordViewController+UI.swift"; sourceTree = "<group>"; };
+		BE9B22DD24B9072D00CF67D4 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		BE9B22DF24B96F0400CF67D4 /* Ref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
 		E114FD0A07EAC75A10C93B0B /* Pods-Direct iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Direct iOS.release.xcconfig"; path = "Target Support Files/Pods-Direct iOS/Pods-Direct iOS.release.xcconfig"; sourceTree = "<group>"; };
 		FF40181605D0D57D9C739F0E /* Pods_Direct_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Direct_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,7 +106,6 @@
 				776991B42478316200C3FEE7 /* Helper */,
 				776991AB24782CD900C3FEE7 /* ViewController */,
 				77699191247825BE00C3FEE7 /* AppDelegate.swift */,
-				775D5155248581B400F5DF47 /* AccountViewController.swift */,
 				77699193247825BE00C3FEE7 /* SceneDelegate.swift */,
 				77699197247825BE00C3FEE7 /* Main.storyboard */,
 				7769919C247825BF00C3FEE7 /* LaunchScreen.storyboard */,
@@ -128,9 +127,10 @@
 				BE98344824A1BC8900DBF8AF /* CreateAccountViewController+UI.swift */,
 				BE8B4F02249C311200C6A9F0 /* WelcomeViewController.swift */,
 				BE98344024A1A7D300DBF8AF /* WelcomeViewController+UI.swift */,
-				776991B024782F0A00C3FEE7 /* SignUpViewController.swift */,
-				776991AE24782F0100C3FEE7 /* LogInViewController.swift */,
-				776991AC24782EF900C3FEE7 /* HomeViewController.swift */,
+				BE91A78924B17CF100CDDCA7 /* Api.swift */,
+				BE91A78D24B17DEF00CDDCA7 /* UserApi.swift */,
+				BE9B22DD24B9072D00CF67D4 /* StorageService.swift */,
+				BE9B22DF24B96F0400CF67D4 /* Ref.swift */,
 				776991B224782F1000C3FEE7 /* ViewController.swift */,
 			);
 			path = ViewController;
@@ -306,23 +306,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE91A78A24B17CF100CDDCA7 /* Api.swift in Sources */,
 				BE98344F24A2964000DBF8AF /* ForgotPasswordViewController.swift in Sources */,
 				BE98344D24A2923300DBF8AF /* SignInViewController+UI.swift in Sources */,
 				BE98344B24A28D7D00DBF8AF /* SignInViewController.swift in Sources */,
 				BE98344524A1AC0A00DBF8AF /* CreateAccountViewController.swift in Sources */,
+				BE9B22DE24B9072D00CF67D4 /* StorageService.swift in Sources */,
 				776991B324782F1000C3FEE7 /* ViewController.swift in Sources */,
 				BE98344924A1BC8900DBF8AF /* CreateAccountViewController+UI.swift in Sources */,
+				BE9B22E024B96F0400CF67D4 /* Ref.swift in Sources */,
 				BE8B4F03249C311200C6A9F0 /* WelcomeViewController.swift in Sources */,
 				776991B62478317800C3FEE7 /* Helpers.swift in Sources */,
-				776991AF24782F0100C3FEE7 /* LogInViewController.swift in Sources */,
 				77699192247825BE00C3FEE7 /* AppDelegate.swift in Sources */,
 				77699194247825BE00C3FEE7 /* SceneDelegate.swift in Sources */,
 				BE98345124A2966300DBF8AF /* ForgotPasswordViewController+UI.swift in Sources */,
-				776991AD24782EF900C3FEE7 /* HomeViewController.swift in Sources */,
 				BE98344124A1A7D300DBF8AF /* WelcomeViewController+UI.swift in Sources */,
-				776991B124782F0A00C3FEE7 /* SignUpViewController.swift in Sources */,
 				772A73DC2478AF6800C46ADE /* Constants.swift in Sources */,
-				775D5156248581B400F5DF47 /* AccountViewController.swift in Sources */,
+				BE91A78E24B17DEF00CDDCA7 /* UserApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

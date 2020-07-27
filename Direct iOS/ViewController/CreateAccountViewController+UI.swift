@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 extension CreateAccountViewController{
 
@@ -94,6 +95,36 @@ extension CreateAccountViewController{
         attributedText.append(attributedSubText)
         signInButton.setAttributedTitle(attributedText, for: UIControl.State.normal)
         
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func validateFeilds(){
+        guard let username = self.fullnameTextField.text, !username.isEmpty else{
+            ProgressHUD.showError(ERROR_EMPTY_USERNAME)
+            return
+        }
+        guard let email = self.emailTextField.text, !email.isEmpty else{
+            ProgressHUD.showError(ERROR_EMPTY_EMAIL)
+            return
+        }
+        guard let password = self.passwordTextField.text, !password.isEmpty else{
+            ProgressHUD.showError(ERROR_EMPTY_PASSWORD)
+            return
+        }
+    }
+    
+    func signUp(onSuccess: @escaping() -> Void, onError: @escaping(_ errorMessage: String) -> Void){
+        ProgressHUD.show()
+        Api.User.signUp(withUsername: self.fullnameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!, image: self.image,
+                        onSuccess: {
+                            ProgressHUD.dismiss()
+                            onSuccess()
+        }) {(errorMessage) in
+            onError(errorMessage)
+        }
     }
 }
 
