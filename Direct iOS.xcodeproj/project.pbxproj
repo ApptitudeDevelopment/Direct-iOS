@@ -33,7 +33,7 @@
 		BE98345124A2966300DBF8AF /* ForgotPasswordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98345024A2966300DBF8AF /* ForgotPasswordViewController+UI.swift */; };
 		BE9B22DE24B9072D00CF67D4 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B22DD24B9072D00CF67D4 /* StorageService.swift */; };
 		BE9B22E024B96F0400CF67D4 /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B22DF24B96F0400CF67D4 /* Ref.swift */; };
-		BE9B22E224CF3A5200CF67D4 /* New.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9B22E124CF3A5200CF67D4 /* New.storyboard */; };
+		BE9B22E224CF3A5200CF67D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9B22E124CF3A5200CF67D4 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +65,7 @@
 		BE98345024A2966300DBF8AF /* ForgotPasswordViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPasswordViewController+UI.swift"; sourceTree = "<group>"; };
 		BE9B22DD24B9072D00CF67D4 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		BE9B22DF24B96F0400CF67D4 /* Ref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
-		BE9B22E124CF3A5200CF67D4 /* New.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = New.storyboard; sourceTree = "<group>"; };
+		BE9B22E124CF3A5200CF67D4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E114FD0A07EAC75A10C93B0B /* Pods-Direct iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Direct iOS.release.xcconfig"; path = "Target Support Files/Pods-Direct iOS/Pods-Direct iOS.release.xcconfig"; sourceTree = "<group>"; };
 		FF40181605D0D57D9C739F0E /* Pods_Direct_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Direct_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,7 +107,7 @@
 				776991AB24782CD900C3FEE7 /* ViewController */,
 				77699191247825BE00C3FEE7 /* AppDelegate.swift */,
 				77699193247825BE00C3FEE7 /* SceneDelegate.swift */,
-				BE9B22E124CF3A5200CF67D4 /* New.storyboard */,
+				BE9B22E124CF3A5200CF67D4 /* Main.storyboard */,
 				7769919C247825BF00C3FEE7 /* LaunchScreen.storyboard */,
 				7769919A247825BF00C3FEE7 /* Assets.xcassets */,
 				7769919F247825BF00C3FEE7 /* Info.plist */,
@@ -233,7 +233,7 @@
 				776991BC24783FA200C3FEE7 /* GoogleService-Info.plist in Resources */,
 				772A73E02478C24700C46ADE /* background.png in Resources */,
 				772A73E42478C53D00C46ADE /* background2.png in Resources */,
-				BE9B22E224CF3A5200CF67D4 /* New.storyboard in Resources */,
+				BE9B22E224CF3A5200CF67D4 /* Main.storyboard in Resources */,
 				772A73E22478C2D700C46ADE /* logo.png in Resources */,
 				7769919B247825BF00C3FEE7 /* Assets.xcassets in Resources */,
 				775D51522485750400F5DF47 /* image.png in Resources */,
